@@ -1,0 +1,116 @@
+[data-dpr="2"] html {
+	font-size: 20px !important;
+}
+
+[data-dpr="3"] html {
+	font-size: 40px !important;
+}
+[data-dpr="1"] html {
+	font-size: 60px!important;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	line-height: none;
+}
+body{
+	background-color: #f1f2f2;
+	font-family: 'Microsoft YaHei',Georgia,Serif;
+}
+li:hover{
+	cursor: pointer;
+}
+.title{
+	height: 1.2rem;
+}
+.title img{
+	width: 10rem;
+	height: 1.2rem;
+}
+.title-photo img{
+	width: 10rem;
+	height: 4.083rem;
+}
+.title-photo{
+	height: 4.083rem;
+}
+.middle{
+	width: 10rem;
+	margin-top: 0.9rem;
+	margin-bottom: 0.9rem;
+}
+.middle ul{
+	position: relative;
+	width: 9rem;
+	height: 4.93rem;
+	margin: 0 auto;
+}
+.middle ul li{
+	position: relative;
+	float: left;
+	margin-left: 0.35rem;
+	width: 2.5rem;
+	height: 2rem;
+	margin-top: 0.25rem;
+}
+.middle ul li img{
+	width: 2.5rem;
+	height: 2rem;
+}
+.introduce{
+	width:  8.25rem;
+	height: 2.8rem;
+	border: 1px solid #d5d5d5;
+	margin: 0 auto;
+	border-radius: 0.1rem;
+}
+.introduce img{
+	width: 1.15rem;
+	height: 1.2rem;
+}
+.introduce p{
+	padding-top: 0.095rem;
+	padding-bottom: 0.095rem;
+	padding-left: 0.35rem;
+	height: 1.2rem;
+	line-height: 1.6rem;
+	font-size: 0.3rem;
+}
+.text{
+	display: inline-block;
+	position: absolute;
+	width: 1.5rem;
+	line-height: 0.6rem;
+	height: 1.2rem;
+	text-align: center;
+	padding-left: 0.5rem;
+	font-weight: 700;
+}
+.text span{
+	font-size: 0.3rem;
+	font-weight: 500;
+}
+.font{
+	margin-top: 1.5rem;
+}
+.font ul{
+	position: relative;
+	width: 10rem;
+	height: 1.63rem;
+	margin: 0 auto;
+}
+.font ul li{
+	position: relative;
+	float: left;
+	width: 2rem;
+	height: 1.63rem;
+}
+.font ul li img{
+	width: 2rem;
+	height: 1.63rem;
+}
+
+
+
