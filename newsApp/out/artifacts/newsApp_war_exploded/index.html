@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,initial-scale=1.0,user-scalable=no">
+    <meta name="flexible" content="maximum-dpr=3" /> -->
+    <title>新闻首页</title>
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <link href="/static/css/index.css" rel="stylesheet">
+    <script src="https://redrock.cqupt.edu.cn/exam-mock/mock-min.js"></script>
+    <script src="https://redrock.cqupt.edu.cn/exam-mock/mock-data.js"></script>
+    <script src="/static/js/custom/quickAjax.js"></script>
+    <script src="/static/js/lib/handlebars-v4.0.5.js"></script>
+</head>
+<body>
+<div class="container"  id="container">
+    <div class="nav">
+        <ul>
+            <li>头条</li>
+            <li>娱乐</li>
+            <li>体育</li>
+            <li>汽车</li>
+            <li>科技</li>
+            <li class="moreTitle"><img id="more-title" src="/static/img/more.png"></li>
+        </ul>
+    </div>
+    <div class="photos">
+        <div class="photo" id="photos-show">
+           <script type="text/x-handlebars-template" id="news-list-template3">
+            {{#each this}}
+            <img src="{{imgURL}}">
+            {{/each}}
+            </script>
+        </div>
+        <div class="photoD">
+            <div id="first-title">
+            <script type="text/x-handlebars-template" id="news-list-template2">
+                {{#each this}}
+                <div>
+                    <span class="comment-style" style="color:white;background-color:{{typeColor}}">{{type}}</span>
+                    <span class="first-title-style" >{{title}}</span>
+                </div>
+                {{/each}}
+            </script>
+            </div>
+            <ul class="choose" id="choose">
+                <script type="text/x-handlebars-template" id="news-list-template4">
+                    {{#each this}}
+                    <li></li>
+                    {{/each}}
+                </script>
+            </ul>
+        </div>
+        <ul id="news-list">
+            <script type="text/x-handlebars-template" id="news-list-template">
+            {{#each this}}
+            <li>
+                <a href="{{link}}">
+                    <img src="{{imgURL}}">
+                    <div class="news-title">{{title}}</div>
+                    <div class="news-content">{{description}}</div>
+                    <div class="comment">
+                        {{post}}跟帖
+                        <div  id="comment-style" style="color:white;background-color:{{typeColor}}">{{type}}</div>
+                    </div>
+                </a>
+            </li>
+            {{/each}}
+        </script>
+        </ul>
+    </div>
+</div>
+<div id="container-m" style="display: none">
+    <div class="nav-add">
+        <ul class="nav-add-title">
+            <li>切换栏目</li>
+            <li class="moreTitle"><img id="more-title2" src="/static/img/more.png"></li>
+        </ul>
+        <ul id="show-title">
+            <script type="text/x-handlebars-template" id="news-list-template5">
+                {{#each added}}
+                <li class="add-title">{{name}}</li>
+                {{/each}}
+            </script>
+        </ul>
+</div>
+ <div class="nav-avaliable">
+            <ul class="nav-avaliable-title">
+                <li>点击添加更多栏目</li>
+            </ul>
+            <ul id="show-title2">
+                <script type="text/x-handlebars-template" id="news-list-template6">
+                    {{#each avaliable}}
+                    <li class="add-title">{{name}}</li>
+                    {{/each}}
+                </script>
+            </ul>
+</div>
+</div>
+<script src="/static/js/custom/run.js"></script>
+</body>
+</html>

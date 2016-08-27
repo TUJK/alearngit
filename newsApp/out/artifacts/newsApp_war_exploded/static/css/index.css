@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei", "Times New Roman", Serif;
+}
+li{
+    list-style: none;
+}
+[data-dpr="2"] html {
+    font-size: 20px !important;
+}
+
+[data-dpr="3"] html {
+    font-size: 40px !important;
+}
+[data-dpr="1"] html {
+    font-size: 60px!important;
+}
+.container{
+    width: 12rem;
+    margin: 0 auto;
+}
+.nav, .nav-add, .nav-avaliable{
+    width: 12rem;
+    margin-top: 2rem !important;
+    margin: 0 auto;
+}
+.nav ul{
+    width: 12rem;
+    height: 1rem;
+    line-height: 1rem;
+    position: relative;
+    background-color: #e6e6e6;
+}
+.nav ul li{
+    position: relative;
+    float: left;
+    height: 0.95rem;
+    margin-left: 1rem;
+    color: black;
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+.nav ul li:hover{
+    border-bottom: 3px solid #be0201;
+    cursor: pointer;
+}
+.nav ul li img{
+    width: 1.5rem;
+    height: 1rem;
+    position: absolute;
+    float: left;
+    margin-left: -1rem;
+}
+.photo{
+    width: 12rem;
+    height: 7rem;
+    overflow: hidden;
+}
+.photos img{
+    width: 12rem;
+    height: 7rem;
+}
+.photoD{
+    width: 12rem;
+    height: 1rem;
+    margin-top: -0.05rem;
+    background-color: #e7e1db;
+}
+.choose{
+    height: 1rem;
+    line-height: 1rem;
+    position: relative;
+    float: right;
+    padding-right: 0.2rem;
+}
+.choose li{
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 50%;
+    background-color: #9c9c9c;
+    margin-left: 0.3rem;
+    margin-top: 0.4rem;
+}
+.choose li:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    text-underline: none;
+}
+#news-list{
+    width:11rem;
+    margin: 0 auto;
+}
+#news-list li{
+    height: 2.6rem;
+    border-bottom: 1px solid gray;
+    color: #9c9c9c;
+    padding-top: 0.2rem;
+    /*padding-bottom: 0.1rem*/
+}
+#news-list li img{
+    width: 2.7rem;
+    height: 2.4rem;
+}
+.news-title{
+    font-size: 0.45rem;
+    position: relative;
+    float: right;
+    width: 7rem;
+    height: 0.5rem;
+    padding-top: 0.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    color:black;
+}
+.news-content{
+    display: inline-block;
+    font-size: 0.4rem;
+    position: relative;
+    float: right;
+    width: 7rem;
+    height: 0.9rem;
+    text-overflow:ellipsis ;
+    margin-top: -1.3rem;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+    color:rgb(128, 128, 128);
+}
+.comment{
+    display: inline-block;
+    font-size: 0.4rem;
+    position: relative;
+    float: right;
+    margin-top: -0.4rem;
+    color:rgb(128, 128, 128);
+}
+#comment-style, .comment-style{
+    display:inline-block;
+    font-size: 0.4rem;
+}
+.comment-style{
+    margin-left: 0.2rem;
+    margin-right: -0.3rem;
+    position: relative;
+    float: left;
+    margin-top: 0.3rem;
+}
+#first-title{
+    width: 8.5rem;
+    height: 0.7rem;
+    overflow: hidden;
+    display: inline-block;
+}
+.first-title-style{
+    display:inline-block;
+    font-size: 0.4rem;
+    width: 7rem;
+    height: 0.5rem;
+    overflow: hidden;
+    padding-top: 0.3rem;
+    padding-left: 0.7rem;
+}
+.d-show{
+    display: none;
+}
+.colorChange{
+    background-color: rgb(81, 81, 81) !important;
+}
+#add, #show-title{
+    width: 10rem;
+    margin: 0 auto;
+}
+#add li, .add-title{
+    font-size: 0.4rem;
+    height: 0.4rem;
+    width: 2rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    margin-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    position: relative;
+    float: left;
+}
+#add li:first-child, #show-title li:first-child{
+    border-left: 0px solid rgb(200, 200, 200);
+}
+.moreTitle{
+    position: relative;
+    float: right;
+}
+.nav-add-title{
+    width: 12rem;
+    height: 1rem;
+    font-size: 0.5rem;
+    margin-top: 2rem;
+    line-height: 1rem;
+    background-color: rgb(230, 230, 230);
+}
+.nav-add-title li{
+    position: relative;
+    float: left;
+}
+.moreTitle{
+    float: right !important;
+}
+#more-title2{
+    width: 2rem;
+    height: 1rem;
+    float: right !important;
+}
+.add-title{
+    text-align: center;
+}
+.nav-avaliable{
+    margin-top: -1rem !important;
+    line-height: 1rem;
+}
+.nav-avaliable-title{
+    margin-top: 2rem;
+    font-size: 0.5rem;
+    width: 12rem;
+    height: 1rem;
+    background-color: #9c9c9c;
+}
+.nav-avaliable li{
+    line-height: 1rem;
+}
+.nav-add{
+    height: 10rem;
+}
+#show-title2 li{
+    line-height: 1rem;
+    text-align: center;
+    border: 1px solid  rgb(200, 200, 200) !important;
+    padding: 0px !important;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    background-color: #e6e6e6;
+    height: 1rem;
+    width: 2rem;
+}
+.add-title:hover{
+    cursor: pointer;
+}
